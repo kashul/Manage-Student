@@ -7,9 +7,11 @@
     <title>Modern POS · DEP</title>
 
     <!-- Bootstrap core CSS -->
-    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/bootstrap.min.css" rel="stylesheet"
+           >
     <!-- Font Awesome CSS -->
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+          >
     <!-- Custom styles -->
     <link href="css/styles.css" rel="stylesheet">
     <!-- Manage Customer Styles -->
@@ -32,64 +34,55 @@
         <nav class="col-md-2 d-none d-md-block bg-light sidebar">
             <div class="sidebar-sticky">
                 <ul class="nav flex-column">
-                    <!--<li class="nav-item">-->
-                        <!--<a class="nav-link" href="index.html">-->
-                            <!--<i class="fas fa-tachometer-alt"></i>-->
-                            <!--Dashboard-->
-                        <!--</a>-->
-                    <!--</li>-->
+
                     <li class="nav-item">
                         <a class="nav-link active" href="manage-course.html">
                             <i class="fas fa-user-friends"></i>
-                            Manage Courses
+                            Manage Curses
                         </a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="manage-batch.html">
                             <i class="fas fa-sitemap"></i>
-                            Manage Batch
+                            Manage batch
                         </a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="place-order.html">
+                        <a class="nav-link" href="manageStudent.html">
                             <i class="fas fa-shopping-cart"></i>
-                            Register Student
+                            Manage Student
                         </a>
                     </li>
-                    <!--<li class="nav-item">-->
-                        <!--<a class="nav-link" href="search-orders.html">-->
-                            <!--<i class="fas fa-search"></i>-->
-                            <!--Search Orders-->
-                        <!--</a>-->
-                    <!--</li>-->
+
                 </ul>
             </div>
         </nav>
 
         <main role="main" class="col-md-9 ml-sm-auto col-lg-10 px-4">
             <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
-                <h1 class="h2">Manage Courses</h1>
+                <h1 class="h2">Manage Batches</h1>
             </div>
             <section>
                 <div class="row">
-                    <div class="col col-12 col-lg-12">
+                    <div class="col col-12 col-lg-4" style="width: 100%">
                         <div class="form-group">
-                            <input type="text" class="form-control" placeholder="Enter Course ID" id="txtCustomerID">
+                            <select id="course" class="form-control" >
+                                <option value="" disabled selected hidden>select course id</option>
+                            </select>
                         </div>
                         <div class="form-group">
-                            <input type="text" class="form-control" placeholder="Enter Course Name" id="txtCustomerNamw">
+                            <input type="text" class="form-control" placeholder="Enter course Name" id="txtCustomerName">
                         </div>
                         <div class="form-group">
-                            <input type="text" class="form-control" placeholder="Enter Course Description" id="txtCustomerName">
+                            <input type="text" class="form-control" placeholder="Enter Batch id" id="txtCustomerdeicription">
                         </div>
                         <div class="form-group">
-                            <input type="text" class="form-control" placeholder="Enter Course Duration" id="txtCustomerAddress">
+                            <input type="text" class="form-control" placeholder="Enter Batch name" id="txtCustomerduration">
                         </div>
                         <div class="form-group text-center">
                             <button class="btn btn-primary" id="btnSave">Save</button>
+
                         </div>
-                    </div>
-                    <div class="col col-12 col-lg-12">
                         <table class="table table-bordered table-hover" id="tblMCustomer">
                             <colgroup>
                                 <col style="width: 100px;">
@@ -101,8 +94,8 @@
                             <tr>
                                 <th>ID</th>
                                 <th>Name</th>
-                                <th>Description</th>
-                                <th>Duration</th>
+                                <th>Address</th>
+                                <th>Delete</th>
                             </tr>
                             </thead>
                             <tbody>
@@ -110,6 +103,7 @@
                             </tbody>
                         </table>
                     </div>
+
                 </div>
             </section>
         </main>
